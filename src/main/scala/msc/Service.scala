@@ -1,7 +1,9 @@
 package msc
 
-case class Service(name: String, version: String, dependencies: Set[Service], isFrontEnd: Boolean = false) {
+case class ServiceId(name: String, version: String)
 
-  override def toString(): String = s"$name-$version"
-
-}
+case class Service(
+  id: ServiceId,
+  dependencies: Set[ServiceId],
+  isLiveFrontEnd: Boolean = false
+)
