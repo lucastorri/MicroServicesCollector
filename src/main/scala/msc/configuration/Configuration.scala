@@ -4,8 +4,8 @@ import msc.{Graph, Node}
 
 trait Configuration {
 
-  def nodes: Set[Node]
+  def cluster: Set[Node]
 
-  def graph: Graph = Graph(nodes)
+  def graph: Graph = Graph(cluster)
 
 }

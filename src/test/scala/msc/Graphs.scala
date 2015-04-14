@@ -22,6 +22,8 @@ object Graphs {
     Service(sc1, Set(), false)
   ))
 
-  val graph = Graph(Set(n1, n2, n3))
+  val cluster = Set(n1, n2, n3)
+
+  val graph = Graph(cluster)
 
 }
